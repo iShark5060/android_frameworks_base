@@ -40,6 +40,12 @@
         <item>157</item><item>334</item>
         <item>0</item>  <item>334</item>
     </array>
+    <array name="batterymeter_bolt_points_shark">
+        <item>232</item><item>0</item>
+        <item>100</item><item>296</item>
+        <item>300</item><item>296</item>
+        <item>4</item>  <item>703</item>
+    </array>
 
     <!--   added for customized status bar     -->
     <!--data type-->
