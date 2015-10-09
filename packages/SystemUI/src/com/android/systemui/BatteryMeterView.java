@@ -768,7 +768,7 @@ public class BatteryMeterView extends View implements DemoMode,
             mFrontPaint.setStyle(Paint.Style.STROKE);
 
             mBackPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-            mBackPaint.setColor(res.getColor(R.color.batterymeter_frame_color));
+            mBackPaint.setColor(res.getColor(R.color.batterymeter_frame_color_shark));
             mBackPaint.setStrokeCap(Paint.Cap.BUTT);
             mBackPaint.setDither(true);
             mBackPaint.setStrokeWidth(0);
@@ -827,7 +827,7 @@ public class BatteryMeterView extends View implements DemoMode,
         }
 
         protected int getBoltPointsArrayResource() {
-            return R.array.batterymeter_bolt_points;
+            return R.array.batterymeter_bolt_points_shark;
         }
 
         private void drawCircle(Canvas canvas, BatteryTracker tracker,
@@ -915,8 +915,9 @@ public class BatteryMeterView extends View implements DemoMode,
             mWarningTextPaint.setTextSize(mCircleSize / 2f);
 
             float strokeWidth = mCircleSize / STROKE_WITH;
-            mFrontPaint.setStrokeWidth(strokeWidth);
-            mBackPaint.setStrokeWidth(strokeWidth);
+            float strokeWidth_shark = 1f;
+            mFrontPaint.setStrokeWidth(strokeWidth_shark);
+            mBackPaint.setStrokeWidth(strokeWidth_shark);
 
             // calculate rectangle for drawArc calls
             int pLeft = getPaddingLeft();
@@ -948,9 +949,9 @@ public class BatteryMeterView extends View implements DemoMode,
                             mBoltFrame.left + mBoltPoints[i] * mBoltFrame.width(),
                             mBoltFrame.top + mBoltPoints[i + 1] * mBoltFrame.height());
                 }
-                mBoltPath.lineTo(
+                /* mBoltPath.lineTo(
                         mBoltFrame.left + mBoltPoints[0] * mBoltFrame.width(),
-                        mBoltFrame.top + mBoltPoints[1] * mBoltFrame.height());
+                        mBoltFrame.top + mBoltPoints[1] * mBoltFrame.height()); */
             }
         }
     }
