@@ -31,6 +31,7 @@
     <drawable name="recents_callout_line">#99ffffff</drawable>
     <drawable name="heads_up_notification_bg_pressed">#ff33B5E5</drawable>
     <color name="batterymeter_frame_color">#66FFFFFF</color><!-- 40% white -->
+    <color name="batterymeter_frame_color_shark">#80FFFFFF</color>
     <color name="batterymeter_charge_color">#FFFFFFFF</color>
     <color name="batterymeter_bolt_color">#FFFFFFFF</color>
     <color name="qs_batterymeter_frame_color">#FF404040</color>
