@@ -915,7 +915,7 @@ public class BatteryMeterView extends View implements DemoMode,
             mWarningTextPaint.setTextSize(mCircleSize / 2f);
 
             float strokeWidth = mCircleSize / STROKE_WITH;
-            float strokeWidth_shark = 1f;
+            float strokeWidth_shark = 2f;
             mFrontPaint.setStrokeWidth(strokeWidth_shark);
             mBackPaint.setStrokeWidth(strokeWidth_shark);
 
