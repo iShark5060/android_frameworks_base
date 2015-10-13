@@ -201,9 +201,6 @@ public class NotificationManagerService extends SystemService {
     /** notification_enqueue status value for an ignored notification. */
     private static final int EVENTLOG_ENQUEUE_STATUS_IGNORED = 2;
 
-    /** notification light maximum brightness value to use. */
-    private static final int LIGHT_BRIGHTNESS_MAXIMUM = 255;
-
     private IActivityManager mAm;
     AudioManager mAudioManager;
     StatusBarManagerInternal mStatusBar;
@@ -222,12 +219,15 @@ public class NotificationManagerService extends SystemService {
     private int mDefaultNotificationLedOff;
     private long[] mDefaultVibrationPattern;
 
+<<<<<<< HEAD
     private boolean mAdjustableNotificationLedBrightness;
     private int mNotificationLedBrightnessLevel = LIGHT_BRIGHTNESS_MAXIMUM;
 
     private boolean mMultipleNotificationLeds;
     private boolean mMultipleLedsEnabledSetting = false;
 
+=======
+>>>>>>> c2486594f114cfb10dd46f1bc1f0baa72bdf9deb
     private boolean mScreenOnEnabled = false;
     private boolean mScreenOnDefault = false;
 
@@ -996,6 +996,7 @@ public class NotificationManagerService extends SystemService {
             resolver.registerContentObserver(Settings.Global.getUriFor(
                     Settings.Global.ZEN_DISABLE_DUCKING_DURING_MEDIA_PLAYBACK), false,
                     this, UserHandle.USER_ALL);
+<<<<<<< HEAD
             if (mAdjustableNotificationLedBrightness) {
                 resolver.registerContentObserver(Settings.System.getUriFor(
                         Settings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL),
@@ -1006,6 +1007,8 @@ public class NotificationManagerService extends SystemService {
                         Settings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE),
                         false, this, UserHandle.USER_ALL);
             }
+=======
+>>>>>>> c2486594f114cfb10dd46f1bc1f0baa72bdf9deb
             update(null);
         }
 
@@ -1045,6 +1048,7 @@ public class NotificationManagerService extends SystemService {
                         UserHandle.USER_CURRENT));
             }
 
+<<<<<<< HEAD
             // Notification LED brightness
             if (mAdjustableNotificationLedBrightness) {
                 mNotificationLedBrightnessLevel = Settings.System.getIntForUser(resolver,
@@ -1059,6 +1063,8 @@ public class NotificationManagerService extends SystemService {
                         mMultipleNotificationLeds ? 1 : 0, UserHandle.USER_CURRENT) != 0);
             }
 
+=======
+>>>>>>> c2486594f114cfb10dd46f1bc1f0baa72bdf9deb
             // Notification lights with screen on
             mScreenOnEnabled = (Settings.System.getIntForUser(resolver,
                     Settings.System.NOTIFICATION_LIGHT_SCREEN_ON,
@@ -1191,11 +1197,14 @@ public class NotificationManagerService extends SystemService {
                 VIBRATE_PATTERN_MAXLEN,
                 DEFAULT_VIBRATE_PATTERN);
 
+<<<<<<< HEAD
         mAdjustableNotificationLedBrightness = resources.getBoolean(
                 com.android.internal.R.bool.config_adjustableNotificationLedBrightness);
         mMultipleNotificationLeds = resources.getBoolean(
                 com.android.internal.R.bool.config_multipleNotificationLeds);
 
+=======
+>>>>>>> c2486594f114cfb10dd46f1bc1f0baa72bdf9deb
         mUseAttentionLight = resources.getBoolean(R.bool.config_useAttentionLight);
 
         // Don't start allowing notifications until the setup wizard has run once.
@@ -3174,10 +3183,13 @@ public class NotificationManagerService extends SystemService {
                 ledOffMS = ledno.ledOffMS;
             }
 
+<<<<<<< HEAD
             // update the LEDs modes variables
             mNotificationLight.setModes(mNotificationLedBrightnessLevel,
                     mMultipleLedsEnabledSetting);
 
+=======
+>>>>>>> c2486594f114cfb10dd46f1bc1f0baa72bdf9deb
             if (mNotificationPulseEnabled) {
                 // pulse repeatedly
                 mNotificationLight.setFlashing(ledARGB, Light.LIGHT_FLASH_TIMED,

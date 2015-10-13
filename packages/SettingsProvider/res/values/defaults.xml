@@ -67,6 +67,7 @@
          pending notification -->
     <bool name="def_notification_pulse">true</bool>
 
+<<<<<<< HEAD
     <!-- Default value for the notification LEDs brightness
          on devices equiped with configurable LED controller -->
     <integer name="def_notification_brightness_level">255</integer>
@@ -75,6 +76,8 @@
          on devices equiped with more than one LED -->
     <bool name="def_notification_multiple_leds">false</bool>
 
+=======
+>>>>>>> c2486594f114cfb10dd46f1bc1f0baa72bdf9deb
     <bool name="def_mount_play_notification_snd">true</bool>
     <bool name="def_mount_ums_autostart">false</bool>
     <bool name="def_mount_ums_prompt">true</bool>

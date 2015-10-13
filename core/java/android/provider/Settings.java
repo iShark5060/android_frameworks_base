@@ -2824,6 +2824,7 @@ public final class Settings {
         public static final String SHOW_WEB_SUGGESTIONS = "show_web_suggestions";
 
         /**
+<<<<<<< HEAD
          * Contains the notifications light maximum brightness to use.
          * @hide
          */
@@ -2838,6 +2839,8 @@ public final class Settings {
                 "notification_light_multiple_leds_enable";
 
         /**
+=======
+>>>>>>> c2486594f114cfb10dd46f1bc1f0baa72bdf9deb
          * Whether to allow notifications with the screen on or DayDreams.
          * The value is boolean (1 or 0). Default will always be false.
          * @hide
@@ -3569,6 +3572,28 @@ public final class Settings {
          */
         public static final String STATUSBAR_COMPONENT = "statusbar_component";
 
+	    /** Network speed indicator
+         * Network traffic indicator, goes from least to greatest significant bitwise
+         * 0 = Display up-stream traffic if set
+         * 1 = Display down-stream traffic if set
+         * 2 = Show as Byte/s if set
+         * 16-31 = Refresh interval(ms) min: 250 max: 32750 default: 1000
+         * @hide
+         */
+        public static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
+
+        /**
+         * Whether or not to hide the network traffic indicator when there is no activity
+         * @hide
+         */
+        public static final String NETWORK_TRAFFIC_AUTOHIDE = "network_traffic_autohide";
+
+        /**
+         * Network traffic inactivity threshold (default is 10 kBs)
+         * @hide
+         */
+        public static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
+
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
@@ -3655,8 +3680,11 @@ public final class Settings {
             LIVE_DISPLAY_HINTED,
             NONE_IS_SILENT,
             ALLOW_LIGHTS,
+<<<<<<< HEAD
             NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
             NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE,
+=======
+>>>>>>> c2486594f114cfb10dd46f1bc1f0baa72bdf9deb
             NOTIFICATION_LIGHT_SCREEN_ON
         };
 

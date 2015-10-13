@@ -2550,12 +2550,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             loadBooleanSetting(stmt, Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION,
                     R.bool.def_swap_volume_keys_on_rotation);
 
+<<<<<<< HEAD
             loadIntegerSetting(stmt, Settings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
                     R.integer.def_notification_brightness_level);
 
             loadBooleanSetting(stmt, Settings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE,
                     R.bool.def_notification_multiple_leds);
 
+=======
+>>>>>>> c2486594f114cfb10dd46f1bc1f0baa72bdf9deb
             loadBooleanSetting(stmt, Settings.System.SYSTEM_PROFILES_ENABLED,
                     R.bool.def_system_profiles_enabled);
 

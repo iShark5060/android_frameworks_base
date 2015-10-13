@@ -807,10 +807,6 @@
     <!-- Default value for LED on time when the battery is low on charge in miliseconds -->
     <integer name="config_notificationsBatteryLedOn">125</integer>
 
-    <!-- Is the notification LED brightness adjustable ?
-         Used to decide if the user can set LED brightness -->
-    <bool name="config_adjustableNotificationLedBrightness">false</bool>
-
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">false</bool>
 
@@ -2044,7 +2040,7 @@
     <bool translatable="false" name="config_sms_decode_gsm_8bit_data">false</bool>
 
     <!-- Package name providing default WebView implementation. -->
-    <string name="config_webViewPackageName" translatable="false">com.android.webview</string>
+    <string name="config_webViewPackageName" translatable="false">com.google.android.webview</string>
 
     <!-- Package name providing alternate WebView implementation.
          Fall back to config_webViewPackageName if not available. -->
@@ -2396,4 +2392,8 @@
 
     <!-- Show WiFi activity indicators on signal bar -->
     <bool name="config_showWifiActivityIndicators">true</bool>
+    
+    <!-- Show device hardware info in About device -->
+    <bool name="config_displayHardwareInfo">false</bool>
+
 </resources>
