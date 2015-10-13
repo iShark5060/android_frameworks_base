@@ -41,14 +41,13 @@
         <item>0</item>  <item>334</item>
     </array>
     <array name="batterymeter_bolt_points_shark">
-        <item>231</item><item>0</item>
-        <item>232</item><item>0</item>
-        <item>100</item><item>296</item>
-        <item>300</item><item>296</item>
-        <item>4</item>  <item>703</item>
-        <item>3</item>  <item>703</item>
-        <item>299</item><item>297</item>
-        <item>99</item> <item>297</item>
+        <item>196</item><item>0</item>
+        <item>246</item><item>0</item>
+        <item>221</item><item>234</item>
+        <item>271</item><item>234</item>
+        <item>196</item><item>703</item>
+        <item>221</item><item>292</item>
+        <item>171</item> <item>292</item>
     </array>
 
     <!--   added for customized status bar     -->
