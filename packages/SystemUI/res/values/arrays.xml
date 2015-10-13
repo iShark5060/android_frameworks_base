@@ -42,11 +42,11 @@
     </array>
     <array name="batterymeter_bolt_points_shark">
         <item>75</item> <item>0</item>
-        <item>50</item> <item>50</item>
-        <item>100</item><item>50</item>
-        <item>25</item> <item>150</item>
         <item>50</item> <item>75</item>
-        <item>0</item>  <item>75</item>
+        <item>100</item><item>75</item>
+        <item>25</item> <item>175</item>
+        <item>50</item> <item>100</item>
+        <item>0</item>  <item>100</item>
     </array>
 
     <!--   added for customized status bar     -->
